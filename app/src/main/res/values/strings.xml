@@ -1,3 +1,7 @@
 <resources>
+
     <string name="app_name">AndroidDrinkShop</string>
+    <string name="FACEBOOK_APP_ID">228318031144970</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">[a967d7432a35bbf3d321250ab5535adb]</string>
+
 </resources>
