@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
         if(requestCode == REQUEST_CODE) {
@@ -101,8 +101,9 @@ public class MainActivity extends AppCompatActivity {
                 {
                     final AlertDialog alertDialog = new SpotsDialog.Builder()
                             .setContext(mContext)
-                            .setTheme(R.style.AppTheme)
+                            .setMessage("Loading ...")
                             .build();
+                    alertDialog.show();
 
                     //Get User phone and Check if it already exists on the server
                     AccountKit.getCurrentAccount(new AccountKitCallback<Account>() {

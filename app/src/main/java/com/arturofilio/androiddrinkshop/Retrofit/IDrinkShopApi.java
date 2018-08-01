@@ -19,6 +19,6 @@ public interface IDrinkShopApi {
     @POST("register.php")
     Call<User> registerNewUser(@Field("phone") String phone,
                                @Field("name") String name,
-                               @Field("address") String birthdate,
+                               @Field("birthdate") String birthdate,
                                @Field("address") String address);
 }
